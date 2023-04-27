@@ -1,18 +1,14 @@
+package view.student;
+
 import model.Student;
+import view.MainFrame;
 
 import javax.swing.*;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Window extends JFrame {
-    public Window() {
-        setTitle("Окно");
-        setSize(500, 500);
-        setLocation(720, 200);
-        setLayout(new FlowLayout());
-
-
+public class AddStudentPanel extends JPanel {
+    public AddStudentPanel(){
         JTextField name = new JTextField(10);
         JTextField surname = new JTextField(10);
         JButton addStudent = new JButton("Добавить");
@@ -24,11 +20,12 @@ public class Window extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Student(name.getText(), surname.getText());
+                name.setText("");
+                surname.setText("");
+                MainFrame.addStudentFrame.setVisible(false);
                 System.out.println(Student.list);
             }
         });
         setVisible(true);
     }
 }
-//Добавить два тиекстовых поля для названия курса и описания курса. Также добавить кнопку для добавления курса.
-//После создания курса в консоль должен выводиться список курсов.

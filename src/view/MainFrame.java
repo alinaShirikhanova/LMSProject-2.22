@@ -20,7 +20,7 @@ public class MainFrame extends JFrame {
         setLocation(720, 200);
         setLayout(new FlowLayout());
         setJMenuBar(new MainMenuBar());
-        add(courseListPanel);
+        add(studentListPanel);
 
         setVisible(true);
     }

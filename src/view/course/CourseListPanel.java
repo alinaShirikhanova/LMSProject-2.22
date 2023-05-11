@@ -10,7 +10,6 @@ public class CourseListPanel extends JPanel {
     public CourseListPanel() {
         JTable table = new JTable();
 
-
         table.setModel(Course.model);
         JScrollPane scroll = new JScrollPane();
         this.add(scroll);

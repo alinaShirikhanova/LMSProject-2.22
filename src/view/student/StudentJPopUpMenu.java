@@ -1,16 +1,20 @@
 package view.student;
 
+import view.repository.StudentRepository;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class StudentJPopUpMenu extends JPopupMenu {
-    public StudentJPopUpMenu() {
-        JMenuItem edit = new JMenuItem("Редактировать");
+    public static JTable table;
+    public StudentJPopUpMenu(JTable table) {
+        StudentJPopUpMenu.table = table;
+        JMenuItem edit = new JMenuItem("Сохранить");
         JMenuItem enroll = new JMenuItem("Зачислить на курс");
         JMenuItem delete = new JMenuItem("Удалить");
 
-        edit.setActionCommand("edit");
+        edit.setActionCommand("save");
         enroll.setActionCommand("enroll");
         delete.setActionCommand("delete");
 
@@ -30,11 +34,15 @@ public class StudentJPopUpMenu extends JPopupMenu {
 
         @Override
         public void actionPerformed(ActionEvent e) {
-            if (e.getActionCommand().equals("edit")) {
+            int index = table.getSelectedRow();
+            int id = (int) table.getValueAt(index, 0);
+            String name = (String) table.getValueAt(index, 1);
+            String surname = (String) table.getValueAt(index, 2);
 
+            switch (e.getActionCommand()) {
+                case "save" -> StudentRepository.updateStudent(id, name, surname);
+                case "delete" -> StudentRepository.deleteStudent(id);
             }
-
-
         }
     }
 }

@@ -8,13 +8,14 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 public class StudentListPanel extends JPanel {
+    public static JTable table;
 
     public StudentListPanel() {
-        JTable table = new JTable();
+        table = new JTable();
         table.setModel(Student.model);
         JScrollPane scroll = new JScrollPane(table);
         add(scroll);
-        StudentJPopUpMenu studentJPopUpMenu = new StudentJPopUpMenu();
+        StudentJPopUpMenu studentJPopUpMenu = new StudentJPopUpMenu(table);
 
         table.setComponentPopupMenu(studentJPopUpMenu);
 

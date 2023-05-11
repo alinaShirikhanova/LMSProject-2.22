@@ -5,31 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1f39ebc-02fb-40b9-8eb0-dc2fc4469387" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/AcademicPerformance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/CourseEnrollment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/MainFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/MainMenuBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/course/AddCourseFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/course/AddCoursePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/student/AddStudentFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/student/AddStudentPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/student/StudentListPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/postgresql_42_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/course/CourseListPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/repository/CourseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/repository/StudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/student/StudentJPopUpMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AcademicPerformance.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddStudentPanel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Course.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CourseEnrollment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainFrame.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainMenuBar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/New Java Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/New Java Project.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Window.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainMenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainMenuBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/course/AddCoursePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/course/AddCoursePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/student/AddStudentPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/student/AddStudentPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/student/StudentListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/student/StudentListPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,12 +51,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/alina/Downloads/postgresql-42.5.1.jar",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="New Java Project" />
       <method v="2">
         <option name="Make" enabled="true" />

@@ -2,6 +2,7 @@ package view.student;
 
 import model.Student;
 import view.MainFrame;
+import view.repository.StudentRepository;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -20,6 +21,7 @@ public class AddStudentPanel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Student(name.getText(), surname.getText());
+                StudentRepository.insertStudent(name.getText(), surname.getText());
                 name.setText("");
                 surname.setText("");
                 MainFrame.addStudentFrame.setVisible(false);

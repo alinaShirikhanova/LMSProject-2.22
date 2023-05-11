@@ -4,20 +4,41 @@ import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 
 public class Student {
-
-
-
     private int id;
     private String name;
     private String surname;
     static int lastID = 0;
     public static ArrayList<Student> list = new ArrayList<>();
 
+    static String[] headers = {"ID", "Name", "Surname"};
+    public static DefaultTableModel model = new DefaultTableModel(headers, 0);
+
     public Student(String name, String surname) {
         this.id = lastID++;
+        setProperties(name, surname);
+    }
+
+
+    public Student(int id, String name, String surname) {
+        this.id = id;
+        setProperties(name, surname);
+    }
+
+    public void setProperties(String name, String surname) {
         this.name = name;
         this.surname = surname;
         list.add(this);
+        addRow(this);
+    }
+
+    public static void addRow(Student student) {
+        model.addRow(
+                new Object[]{
+                        student.id,
+                        student.name,
+                        student.surname
+                }
+        );
     }
 
     @Override

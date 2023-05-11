@@ -2,6 +2,7 @@ package view.course;
 
 import model.Course;
 import view.MainFrame;
+import view.repository.CourseRepository;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -21,6 +22,7 @@ public class AddCoursePanel extends JPanel {
             @Override
             public void actionPerformed(ActionEvent e) {
                 new Course(title.getText(), description.getText());
+                CourseRepository.insertCourse(title.getText(), description.getText());
                 title.setText("");
                 description.setText("");
                 MainFrame.addCourseFrame.setVisible(false);

@@ -1,5 +1,6 @@
 package model;
 
+import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 
 public class Course {
@@ -9,12 +10,35 @@ public class Course {
     static int lastID = 0;
     public static ArrayList<Course> list = new ArrayList<>();
 
+    static String[] headers = {"ID", "Title", "Description"};
+    public static DefaultTableModel model = new DefaultTableModel(headers, 0);
+
 
     public Course(String title, String description) {
         this.id = lastID++;
+        setProperties(title, description);
+    }
+    public Course(int id, String title, String description) {
+        this.id = id;
+        setProperties(title, description);
+    }
+
+
+    public void setProperties(String title, String description) {
         this.title = title;
         this.description = description;
         list.add(this);
+        addRow(this);
+    }
+
+    public static void addRow(Course course) {
+        model.addRow(
+                new Object[]{
+                        course.id,
+                        course.title,
+                        course.description
+                }
+        );
     }
 
     public CourseEnrollment addStudent(Student student){

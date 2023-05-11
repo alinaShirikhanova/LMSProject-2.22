@@ -1,6 +1,5 @@
 package view;
 
-import view.MainFrame;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -21,6 +20,15 @@ public class MainMenuBar extends JMenuBar {
 
         lists.add(students);
         lists.add(courses);
+
+        courses.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+//                Main.mainFrame.remove(MainFrame.studentListPanel);
+//                Main.mainframe.add(MainFrame.courseListPanel);
+            }
+        });
+
         return lists;
     }
 

@@ -1,9 +1,9 @@
-package view;
+package com.company.view;
 
-import view.course.AddCourseFrame;
-import view.course.CourseListPanel;
-import view.student.AddStudentFrame;
-import view.student.StudentListPanel;
+import com.company.view.course.AddCourseFrame;
+import com.company.view.course.CourseListPanel;
+import com.company.view.student.AddStudentFrame;
+import com.company.view.student.StudentListPanel;
 
 import javax.swing.*;
 import java.awt.*;

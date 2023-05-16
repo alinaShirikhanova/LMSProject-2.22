@@ -4,13 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1f39ebc-02fb-40b9-8eb0-dc2fc4469387" name="Changes" comment="Lesson 39">
+    <list default="true" id="c1f39ebc-02fb-40b9-8eb0-dc2fc4469387" name="Changes" comment="Lesson 40">
+      <change afterPath="$PROJECT_DIR$/src/com/company/view/course/CourseJPopUpMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/course/CourseListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/course/CourseListPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/repository/StudentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/student/StudentJPopUpMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/student/StudentJPopUpMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/student/StudentListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/student/StudentListPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/AcademicPerformance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/AcademicPerformance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/CourseEnrollment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/CourseEnrollment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/view/MainFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainMenuBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/view/MainMenuBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/course/AddCourseFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/view/course/AddCourseFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/course/AddCoursePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/view/course/AddCoursePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/course/CourseListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/view/course/CourseListPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/repository/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/view/repository/CourseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/view/repository/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/student/AddStudentFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/view/student/AddStudentFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/student/AddStudentPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/view/student/AddStudentPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/student/StudentJPopUpMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/view/student/StudentJPopUpMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/student/StudentListPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/view/student/StudentListPanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683825395471</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lesson 40">
+      <created>1683830207042</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1683830207042</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,22 +108,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lesson 39" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 39" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/view/course/AddCourseFrame.java</url>
-          <line>10</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/view/student/StudentListPanel.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Lesson 40" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 40" />
   </component>
 </project>

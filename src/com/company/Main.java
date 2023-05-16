@@ -1,11 +1,10 @@
 package com.company;
 
+import com.company.view.MainFrame;
+import com.company.view.repository.CourseRepository;
+import com.company.view.repository.StudentRepository;
 
-import view.MainFrame;
-import view.repository.CourseRepository;
-import view.repository.StudentRepository;
-
-class Main {
+public class Main {
 
     public static MainFrame mainFrame = new MainFrame();
     public static void main(String[] args) {

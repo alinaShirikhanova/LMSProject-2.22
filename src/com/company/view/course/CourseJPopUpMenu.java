@@ -1,17 +1,20 @@
-package view.student;
+package com.company.view.course;
 
-import view.repository.StudentRepository;
+import com.company.model.Course;
+import com.company.model.CourseEnrollment;
+import com.company.model.Student;
+import com.company.view.repository.StudentRepository;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class StudentJPopUpMenu extends JPopupMenu {
+public class CourseJPopUpMenu extends JPopupMenu {
     public static JTable table;
-    public StudentJPopUpMenu(JTable table) {
-        StudentJPopUpMenu.table = table;
+    public CourseJPopUpMenu(JTable table) {
+        CourseJPopUpMenu.table = table;
         JMenuItem edit = new JMenuItem("Сохранить");
-        JMenuItem enroll = new JMenuItem("Зачислить на курс");
+        JMenuItem enroll = new JMenuItem("Зачислить студента");
         JMenuItem delete = new JMenuItem("Удалить");
 
         edit.setActionCommand("save");
@@ -36,12 +39,14 @@ public class StudentJPopUpMenu extends JPopupMenu {
         public void actionPerformed(ActionEvent e) {
             int index = table.getSelectedRow();
             int id = (int) table.getValueAt(index, 0);
-            String name = (String) table.getValueAt(index, 1);
-            String surname = (String) table.getValueAt(index, 2);
+            String title = (String) table.getValueAt(index, 1);
+            String description = (String) table.getValueAt(index, 2);
 
             switch (e.getActionCommand()) {
-                case "save" -> StudentRepository.updateStudent(id, name, surname);
-                case "delete" -> StudentRepository.deleteStudent(id);
+                case "save" -> StudentRepository.updateStudent(id, title, description);
+                case "delete" -> {StudentRepository.deleteStudent(id);
+                    Course.list.remove(1);
+                }
             }
         }
     }

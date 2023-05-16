@@ -1,4 +1,4 @@
-package model;
+package com.company.model;
 
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
@@ -81,7 +81,11 @@ public class Student {
     public void setSurname(String surname) {
         this.surname = surname;
     }
-
-
-
+    public static Student getStudentById(int id) {
+        for (Student student : list) {
+            if (student.id == id)
+                return student;
+        }
+        return null;
+    }
 }

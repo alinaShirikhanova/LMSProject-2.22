@@ -1,4 +1,4 @@
-package model;
+package com.company.model;
 
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;

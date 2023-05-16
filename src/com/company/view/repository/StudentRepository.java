@@ -1,6 +1,6 @@
-package view.repository;
+package com.company.view.repository;
 
-import model.Student;
+import com.company.model.Student;
 
 import java.sql.*;
 

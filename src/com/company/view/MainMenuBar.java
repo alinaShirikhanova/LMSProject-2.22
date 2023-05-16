@@ -1,9 +1,10 @@
-package view;
+package com.company.view;
 
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import com.company.Main;
 
 public class MainMenuBar extends JMenuBar {
     public MainMenuBar() {
@@ -12,25 +13,54 @@ public class MainMenuBar extends JMenuBar {
         add(helpMenu());
     }
 
-    public JMenu listMenu() {
+//    public JMenu listMenu() {
+//        JMenu lists = new JMenu("Списки");
+//
+//        JMenuItem students = new JMenuItem("Студенты");
+//        JMenuItem courses = new JMenuItem("Курсы");
+//
+//        lists.add(students);
+//        lists.add(courses);
+//
+//        courses.addActionListener(new ActionListener() {
+//            @Override
+//            public void actionPerformed(ActionEvent e) {
+////                Main.mainFrame.remove(MainFrame.studentListPanel);
+////                Main.mainframe.add(MainFrame.courseListPanel);
+//            }
+//        });
+//
+//        return lists;
+//    }
+
+    private JMenu listMenu() {
         JMenu lists = new JMenu("Списки");
-
-        JMenuItem students = new JMenuItem("Студенты");
         JMenuItem courses = new JMenuItem("Курсы");
+        JMenuItem students = new JMenuItem("Студенты");
 
-        lists.add(students);
         lists.add(courses);
+        lists.add(students);
+
+        students.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Main.mainFrame.remove(MainFrame.courseListPanel);
+                Main.mainFrame.add(MainFrame.studentListPanel);
+                Main.mainFrame.pack();
+            }
+        });
 
         courses.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-//                Main.mainFrame.remove(MainFrame.studentListPanel);
-//                Main.mainframe.add(MainFrame.courseListPanel);
+                Main.mainFrame.remove(MainFrame.studentListPanel);
+                Main.mainFrame.add(MainFrame.courseListPanel);
+                Main.mainFrame.pack();
             }
         });
-
         return lists;
     }
+
 
     public JMenu helpMenu() {
         JMenu help = new JMenu("Помощь");
